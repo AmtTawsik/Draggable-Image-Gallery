@@ -44,7 +44,7 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div className='mb-5'>
       {/* Header */}
       <section className='flex justify-between items-center w-11/12 mx-auto py-2'>
         {
@@ -87,7 +87,7 @@ export default function Home() {
                 <input
                   type="checkbox"
                   checked={selectedImages.includes(image.id)} // checkbox input
-                  className="absolute top-2 left-2 cursor-pointer"
+                  className="absolute top-2 left-2 cursor-pointer h-4 w-4"
                 />
                 <img draggable="false" className="w-full rounded-lg" src={image.imgLink} alt={image.id} />
               </div>
