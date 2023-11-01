@@ -43,7 +43,13 @@ export default function Home() {
   return (
     <div>
       <section className='flex justify-between items-center w-11/12 mx-auto py-2'>
-        <h3 className='text-2xl font-bold'>{selectedImages.length} {selectedImages.length === 1 ? <span>File</span> : <span>Files</span>} Selected</h3>
+        {
+          selectedImages.length > 0 ? 
+          <h3 className='text-2xl font-bold'>{selectedImages.length} {selectedImages.length === 1 ? <span>File</span> : <span>Files</span>} Selected</h3>
+          :
+          <h3 className='text-2xl font-bold'>Gelary</h3>
+        }
+        
         <div className='font-bold text-red-500'>
           {selectedImages.length > 0 && (
             <button onClick={handleMultipleDelete}>Delete {selectedImages.length === 1 ? <span>File</span> : <span>Files</span>}</button>
