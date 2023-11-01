@@ -62,11 +62,11 @@ export default function Home() {
         </div>
       </section>
       <hr className='my-2' />
-      {/* Gelary Section Start Here  */}
+      {/* Gelary Start Here  */}
       {
         loading ?
           // If loading it will show loading Component 
-          <section className='md:-mt-20'>
+          <section className='md:-mt-20 -mt-10'>
             <Loading />
           </section>
           :
@@ -108,7 +108,7 @@ export default function Home() {
             </div>
           </section>
       }
-      {/* Gelary Section End Here  */}
+      {/* Gelary End Here  */}
     </div>
   );
 }
